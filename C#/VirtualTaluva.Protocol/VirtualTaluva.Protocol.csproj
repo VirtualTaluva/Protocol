@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9BE9F49C-EB4E-4AF5-95EE-3C92F09DEA05}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VirtualTaluva.Protocol</RootNamespace>
+    <AssemblyName>VirtualTaluva.Protocol</AssemblyName>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile328</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\VirtualTaluva.Protocol.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\VirtualTaluva.Protocol.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net40+sl5+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AbstractCommand.cs" />
+    <Compile Include="AbstractReponse.cs" />
+    <Compile Include="AbstractGameCommand.cs" />
+    <Compile Include="AbstractLobbyCommand.cs" />
+    <Compile Include="Enums\BluffinCommandEnum.cs" />
+    <Compile Include="DisconnectCommand.cs" />
+    <Compile Include="Enums\BluffinMessageId.cs" />
+    <Compile Include="Game\BetTurnEndedCommand.cs" />
+    <Compile Include="Game\BetTurnStartedCommand.cs" />
+    <Compile Include="Game\DiscardRoundEndedCommand.cs" />
+    <Compile Include="Game\DiscardRoundStartedCommand.cs" />
+    <Compile Include="Game\GameEndedCommand.cs" />
+    <Compile Include="Game\GameStartedCommand.cs" />
+    <Compile Include="Game\PlayerHoleCardsChangedCommand.cs" />
+    <Compile Include="Game\GameMessageCommand.cs" />
+    <Compile Include="Game\PlayerDiscardActionCommand.cs" />
+    <Compile Include="Game\PlayerPlayMoneyCommand.cs" />
+    <Compile Include="Game\PlayerSitInCommand.cs" />
+    <Compile Include="Game\PlayerSitInResponse.cs" />
+    <Compile Include="Game\PlayerSitOutCommand.cs" />
+    <Compile Include="Game\PlayerSitOutResponse.cs" />
+    <Compile Include="Game\PlayerTurnBeganCommand.cs" />
+    <Compile Include="Game\PlayerTurnEndedCommand.cs" />
+    <Compile Include="Game\PlayerWonPotCommand.cs" />
+    <Compile Include="Game\SeatUpdatedCommand.cs" />
+    <Compile Include="Game\TableClosedCommand.cs" />
+    <Compile Include="IResponse.cs" />
+    <Compile Include="ICommandWithResponse.cs" />
+    <Compile Include="IGameCommand.cs" />
+    <Compile Include="Lobby\LeaveTableCommand.cs" />
+    <Compile Include="Lobby\RegisteredMode\AuthenticateUserCommand.cs" />
+    <Compile Include="Lobby\RegisteredMode\AuthenticateUserResponse.cs" />
+    <Compile Include="Lobby\RegisteredMode\CheckDisplayExistCommand.cs" />
+    <Compile Include="Lobby\RegisteredMode\CheckDisplayExistResponse.cs" />
+    <Compile Include="Lobby\RegisteredMode\CheckUserExistCommand.cs" />
+    <Compile Include="Lobby\RegisteredMode\CheckUserExistResponse.cs" />
+    <Compile Include="Lobby\RegisteredMode\CreateUserCommand.cs" />
+    <Compile Include="Lobby\RegisteredMode\CreateUserResponse.cs" />
+    <Compile Include="Lobby\RegisteredMode\GetUserCommand.cs" />
+    <Compile Include="Lobby\RegisteredMode\GetUserResponse.cs" />
+    <Compile Include="Lobby\CreateTableCommand.cs" />
+    <Compile Include="Lobby\CreateTableResponse.cs" />
+    <Compile Include="Lobby\JoinTableCommand.cs" />
+    <Compile Include="Lobby\JoinTableResponse.cs" />
+    <Compile Include="Lobby\ListTableCommand.cs" />
+    <Compile Include="Lobby\ListTableResponse.cs" />
+    <Compile Include="Lobby\CheckCompatibilityCommand.cs" />
+    <Compile Include="Lobby\CheckCompatibilityResponse.cs" />
+    <Compile Include="Lobby\QuickMode\IdentifyCommand.cs" />
+    <Compile Include="Lobby\QuickMode\IdentifyResponse.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VirtualTaluva.Protocol.DataTypes\VirtualTaluva.Protocol.DataTypes.csproj">
+      <Project>{c66657b1-e75d-49d4-854b-a71069daf9a5}</Project>
+      <Name>VirtualTaluva.Protocol.DataTypes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
