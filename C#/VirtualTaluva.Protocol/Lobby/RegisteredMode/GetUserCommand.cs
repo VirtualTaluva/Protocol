@@ -11,7 +11,7 @@ namespace VirtualTaluva.Protocol.Lobby.RegisteredMode
         /// 
         /// </summary>
         /// <returns></returns>
-        public GetUserResponse Response(bool success, BluffinMessageId msgId, string message)
+        public GetUserResponse Response(bool success, TaluvaMessageId msgId, string message)
         {
             return new GetUserResponse(this) { Success = success, MessageId = msgId, Message = message };
         }

@@ -25,7 +25,7 @@ namespace VirtualTaluva.Protocol
         /// 
         /// </summary>
         [JsonIgnore]
-        public abstract BluffinCommandEnum CommandType { get; }
+        public abstract TaluvaCommandEnum CommandType { get; }
 
         /// <summary>
         /// Browsing all Types inheriting "AbstractBluffinCommand", it finds the type named exactly like the "CommandName" attribute in the JSON.

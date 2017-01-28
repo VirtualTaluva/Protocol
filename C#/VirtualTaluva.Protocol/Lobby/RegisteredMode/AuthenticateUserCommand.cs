@@ -23,7 +23,7 @@ namespace VirtualTaluva.Protocol.Lobby.RegisteredMode
         /// 
         /// </summary>
         /// <returns></returns>
-        public AuthenticateUserResponse Response(bool success, BluffinMessageId msgId, string message)
+        public AuthenticateUserResponse Response(bool success, TaluvaMessageId msgId, string message)
         {
             return new AuthenticateUserResponse(this) { Success = success, MessageId = msgId, Message = message };
         }

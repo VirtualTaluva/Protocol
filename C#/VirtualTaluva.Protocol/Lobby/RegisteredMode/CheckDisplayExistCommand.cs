@@ -18,7 +18,7 @@ namespace VirtualTaluva.Protocol.Lobby.RegisteredMode
         /// 
         /// </summary>
         /// <returns></returns>
-        public CheckDisplayExistResponse Response(bool success, BluffinMessageId msgId, string message)
+        public CheckDisplayExistResponse Response(bool success, TaluvaMessageId msgId, string message)
         {
             return new CheckDisplayExistResponse(this) { Success = success, MessageId = msgId, Message = message };
         }

@@ -20,9 +20,9 @@ namespace VirtualTaluva.Protocol
         /// <summary>
         /// The Id of the message. None if no message
         /// </summary>
-        [ExampleValue(BluffinMessageId.None)]
+        [ExampleValue(TaluvaMessageId.None)]
         [JsonProperty(Order = -20)]
-        public BluffinMessageId MessageId { get; set; }
+        public TaluvaMessageId MessageId { get; set; }
         /// <summary>
         /// The message. Empty if no messages
         /// </summary>
@@ -39,7 +39,7 @@ namespace VirtualTaluva.Protocol
         /// <summary>
         /// 
         /// </summary>
-        public override BluffinCommandEnum CommandType => Command.CommandType;
+        public override TaluvaCommandEnum CommandType => Command.CommandType;
 
         /// <summary>
         /// 

@@ -33,7 +33,7 @@ namespace VirtualTaluva.Protocol.Lobby.RegisteredMode
         /// 
         /// </summary>
         /// <returns></returns>
-        public CreateUserResponse Response(bool success, BluffinMessageId msgId, string message)
+        public CreateUserResponse Response(bool success, TaluvaMessageId msgId, string message)
         {
             return new CreateUserResponse(this) { Success = success, MessageId = msgId, Message = message };
         }

@@ -11,7 +11,7 @@ namespace VirtualTaluva.Protocol.Game
         /// 
         /// </summary>
         /// <returns></returns>
-        public PlayerSitOutResponse Response(bool success, BluffinMessageId msgId, string message)
+        public PlayerSitOutResponse Response(bool success, TaluvaMessageId msgId, string message)
         {
             return new PlayerSitOutResponse(this) { Success = success, MessageId = msgId, Message = message };
         }

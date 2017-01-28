@@ -3,7 +3,7 @@
     /// <summary>
     /// 
     /// </summary>
-    public enum BluffinMessageId
+    public enum TaluvaMessageId
     {
         /// <summary>
         /// None

@@ -10,6 +10,6 @@ namespace VirtualTaluva.Protocol
         /// <summary>
         /// 
         /// </summary>
-        public override BluffinCommandEnum CommandType => BluffinCommandEnum.General;
+        public override TaluvaCommandEnum CommandType => TaluvaCommandEnum.General;
     }
 }

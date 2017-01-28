@@ -12,7 +12,7 @@ namespace VirtualTaluva.Protocol
         /// <summary>
         /// 
         /// </summary>
-        public override BluffinCommandEnum CommandType => BluffinCommandEnum.Game;
+        public override TaluvaCommandEnum CommandType => TaluvaCommandEnum.Game;
 
         /// <summary>
         /// The id of the table where this command needs to go

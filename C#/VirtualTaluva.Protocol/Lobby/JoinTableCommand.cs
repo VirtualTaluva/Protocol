@@ -19,7 +19,7 @@ namespace VirtualTaluva.Protocol.Lobby
         /// 
         /// </summary>
         /// <returns></returns>
-        public JoinTableResponse Response(bool success, BluffinMessageId msgId, string message)
+        public JoinTableResponse Response(bool success, TaluvaMessageId msgId, string message)
         {
             return new JoinTableResponse(this) { Success = success, MessageId = msgId, Message = message };
         }

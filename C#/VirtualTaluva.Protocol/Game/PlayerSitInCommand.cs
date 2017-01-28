@@ -24,7 +24,7 @@ namespace VirtualTaluva.Protocol.Game
         /// 
         /// </summary>
         /// <returns></returns>
-        public PlayerSitInResponse Response(bool success, BluffinMessageId msgId, string message)
+        public PlayerSitInResponse Response(bool success, TaluvaMessageId msgId, string message)
         {
             return new PlayerSitInResponse(this) { Success = success, MessageId = msgId, Message = message };
         }

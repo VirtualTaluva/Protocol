@@ -18,7 +18,7 @@ namespace VirtualTaluva.Protocol.Lobby.QuickMode
         /// 
         /// </summary>
         /// <returns></returns>
-        public IdentifyResponse Response(bool success, BluffinMessageId msgId, string message)
+        public IdentifyResponse Response(bool success, TaluvaMessageId msgId, string message)
         {
             return new IdentifyResponse(this) { Success = success, MessageId = msgId, Message = message };
         }

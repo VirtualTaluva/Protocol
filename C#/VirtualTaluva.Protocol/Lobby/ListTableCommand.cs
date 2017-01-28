@@ -20,7 +20,7 @@ namespace VirtualTaluva.Protocol.Lobby
         /// 
         /// </summary>
         /// <returns></returns>
-        public ListTableResponse Response(bool success, BluffinMessageId msgId, string message)
+        public ListTableResponse Response(bool success, TaluvaMessageId msgId, string message)
         {
             return new ListTableResponse(this) { Success = success, MessageId = msgId, Message = message };
         }

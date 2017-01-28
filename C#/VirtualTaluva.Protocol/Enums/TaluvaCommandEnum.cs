@@ -3,7 +3,7 @@
     /// <summary>
     /// 
     /// </summary>
-    public enum BluffinCommandEnum
+    public enum TaluvaCommandEnum
     {
         /// <summary>
         /// General

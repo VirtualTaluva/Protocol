@@ -13,7 +13,7 @@ namespace VirtualTaluva.Protocol
         /// 
         /// </summary>
         /// <returns></returns>
-        TResponse Response(bool success, BluffinMessageId msgId, string message);
+        TResponse Response(bool success, TaluvaMessageId msgId, string message);
     }
 
     /// <summary>
@@ -29,7 +29,7 @@ namespace VirtualTaluva.Protocol
         /// <returns></returns>
         public static TResponse ResponseSuccess<TResponse>(this ICommandWithResponse<TResponse> cmd) where TResponse : IResponse
         {
-            return cmd.Response(true, BluffinMessageId.None, string.Empty);
+            return cmd.Response(true, TaluvaMessageId.None, string.Empty);
         }
         /// <summary>
         /// 
@@ -39,7 +39,7 @@ namespace VirtualTaluva.Protocol
         /// <param name="msgId"></param>
         /// <param name="message"></param>
         /// <returns></returns>
-        public static TResponse ResponseSuccess<TResponse>(this ICommandWithResponse<TResponse> cmd, BluffinMessageId msgId, string message) where TResponse : IResponse
+        public static TResponse ResponseSuccess<TResponse>(this ICommandWithResponse<TResponse> cmd, TaluvaMessageId msgId, string message) where TResponse : IResponse
         {
             return cmd.Response(true, msgId, message);
         }
@@ -51,7 +51,7 @@ namespace VirtualTaluva.Protocol
         /// <param name="msgId"></param>
         /// <param name="message"></param>
         /// <returns></returns>
-        public static TResponse ResponseFailure<TResponse>(this ICommandWithResponse<TResponse> cmd, BluffinMessageId msgId, string message) where TResponse : IResponse
+        public static TResponse ResponseFailure<TResponse>(this ICommandWithResponse<TResponse> cmd, TaluvaMessageId msgId, string message) where TResponse : IResponse
         {
             return cmd.Response(false, msgId, message);
         }
