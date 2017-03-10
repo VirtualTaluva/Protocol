@@ -11,7 +11,7 @@ namespace VirtualTaluva.Protocol.Tests.DataTypes
             return new TableParams()
             {
                 Blind = BlindTypeEnum.Blinds,
-                Options = new GameTypeOptionsCommunity(),
+                Options = new GameTypeOptionsStandard(),
                 GameSize = 10,
                 Limit = LimitTypeEnum.NoLimit,
                 Lobby = new LobbyOptionsQuickMode
@@ -22,7 +22,7 @@ namespace VirtualTaluva.Protocol.Tests.DataTypes
                 MinPlayersToStart = 10,
                 TableName = "Table One",
                 Arguments = "",
-                Variant = GameSubTypeEnum.TexasHoldem,
+                Variant = GameSubTypeEnum.Standard,
                 WaitingTimes = new ConfigurableWaitingTimes
                 {
                     AfterBoardDealed = 1,
@@ -36,7 +36,7 @@ namespace VirtualTaluva.Protocol.Tests.DataTypes
             return new TableParams()
             {
                 Blind = BlindTypeEnum.Blinds,
-                Options = new GameTypeOptionsCommunity(),
+                Options = new GameTypeOptionsStandard(),
                 GameSize = 100,
                 Limit = LimitTypeEnum.FixedLimit,
                 Lobby = new LobbyOptionsRegisteredMode
@@ -47,7 +47,7 @@ namespace VirtualTaluva.Protocol.Tests.DataTypes
                 MinPlayersToStart = 8,
                 TableName = "Table Two",
                 Arguments = "",
-                Variant = GameSubTypeEnum.OmahaHoldem,
+                Variant = GameSubTypeEnum.Standard,
                 WaitingTimes = new ConfigurableWaitingTimes
                 {
                     AfterBoardDealed = 1,
@@ -61,7 +61,7 @@ namespace VirtualTaluva.Protocol.Tests.DataTypes
             return new TableParams()
             {
                 Blind = BlindTypeEnum.Blinds,
-                Options = new GameTypeOptionsCommunity(),
+                Options = new GameTypeOptionsStandard(),
                 GameSize = 1000,
                 Limit = LimitTypeEnum.NoLimit,
                 Lobby = new LobbyOptionsRegisteredMode
@@ -72,7 +72,7 @@ namespace VirtualTaluva.Protocol.Tests.DataTypes
                 MinPlayersToStart = 3,
                 TableName = "Table Three",
                 Arguments = "--verbose",
-                Variant = GameSubTypeEnum.CrazyPineapple,
+                Variant = GameSubTypeEnum.Standard,
                 WaitingTimes = new ConfigurableWaitingTimes
                 {
                     AfterBoardDealed = 1,

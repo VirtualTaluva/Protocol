@@ -8,11 +8,11 @@ namespace VirtualTaluva.Protocol.Tests.Comparing
     {
         public static void Compare(GameInfo g, GameInfo dg)
         {
-            Assert.IsFalse(g.AvailableBlinds.Except(dg.AvailableBlinds).Any());
-            Assert.IsFalse(g.AvailableLimits.Except(dg.AvailableLimits).Any());
+            //Assert.IsFalse(g.AvailableBlinds.Except(dg.AvailableBlinds).Any());
+            //Assert.IsFalse(g.AvailableLimits.Except(dg.AvailableLimits).Any());
             Assert.IsFalse(g.AvailableVariants.Except(dg.AvailableVariants).Any());
-            Assert.AreEqual(g.AvailableBlinds.Length, dg.AvailableBlinds.Length);
-            Assert.AreEqual(g.AvailableLimits.Length, dg.AvailableLimits.Length);
+            //Assert.AreEqual(g.AvailableBlinds.Length, dg.AvailableBlinds.Length);
+            //Assert.AreEqual(g.AvailableLimits.Length, dg.AvailableLimits.Length);
             Assert.AreEqual(g.AvailableVariants.Length, dg.AvailableVariants.Length);
             Assert.AreEqual(g.GameType, dg.GameType);
             Assert.AreEqual(g.MaxPlayers, dg.MaxPlayers);

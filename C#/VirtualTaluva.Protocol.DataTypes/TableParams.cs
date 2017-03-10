@@ -20,7 +20,7 @@ namespace VirtualTaluva.Protocol.DataTypes
         /// <summary>
         /// The variant of the GameType
         /// </summary>
-        [ExampleValue(GameSubTypeEnum.TexasHoldem)]
+        [ExampleValue(GameSubTypeEnum.Standard)]
         public GameSubTypeEnum Variant { get; set; }
 
         /// <summary>
@@ -67,7 +67,7 @@ namespace VirtualTaluva.Protocol.DataTypes
         /// <summary>
         /// The type of table it is (QuickMode ? RegisteredMode ?) See 'VirtualTaluva.Protocol.DataTypes.Options.LobbyOptions' for more details
         /// </summary>
-        [ExampleValue(typeof(GameTypeOptionsCommunity))]
+        [ExampleValue(typeof(GameTypeOptionsStandard))]
         [JsonConverter(typeof(OptionJsonConverter<GameTypeOptions, GameTypeEnum>))]
         [JsonProperty(Order = 100)]
         public GameTypeOptions Options { get; set; }
@@ -87,7 +87,7 @@ namespace VirtualTaluva.Protocol.DataTypes
         {
             Arguments = string.Empty;
             TableName = "Anonymous Table";
-            Variant = GameSubTypeEnum.TexasHoldem;
+            Variant = GameSubTypeEnum.Standard;
             MinPlayersToStart = 2;
             MaxPlayers = 10;
             WaitingTimes = new ConfigurableWaitingTimes();
@@ -95,7 +95,7 @@ namespace VirtualTaluva.Protocol.DataTypes
             Lobby = new LobbyOptionsQuickMode();
             Blind = BlindTypeEnum.Blinds;
             Limit = LimitTypeEnum.NoLimit;
-            Options = new GameTypeOptionsCommunity();
+            Options = new GameTypeOptionsStandard();
         }
     }
 }

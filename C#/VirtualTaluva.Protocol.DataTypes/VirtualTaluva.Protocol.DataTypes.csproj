@@ -73,9 +73,7 @@
     <Compile Include="Options\GameMessageOptionGeneralInformation.cs" />
     <Compile Include="Options\IOption.cs" />
     <Compile Include="Options\GameTypeOptions.cs" />
-    <Compile Include="Options\GameTypeOptionsCommunity.cs" />
-    <Compile Include="Options\GameTypeOptionsStud.cs" />
-    <Compile Include="Options\GameTypeOptionsDraw.cs" />
+    <Compile Include="Options\GameTypeOptionsStandard.cs" />
     <Compile Include="Options\LobbyOptions.cs" />
     <Compile Include="Options\LobbyOptionsRegisteredMode.cs" />
     <Compile Include="Options\LobbyOptionsQuickMode.cs" />

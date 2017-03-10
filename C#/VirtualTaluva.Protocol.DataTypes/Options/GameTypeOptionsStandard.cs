@@ -5,11 +5,11 @@ namespace VirtualTaluva.Protocol.DataTypes.Options
     /// <summary>
     ///  
     /// </summary>
-    public class GameTypeOptionsDraw : GameTypeOptions
+    public class GameTypeOptionsStandard : GameTypeOptions
     {
         /// <summary>
         /// 
         /// </summary>
-        public override GameTypeEnum OptionType => GameTypeEnum.DrawPoker;
+        public override GameTypeEnum OptionType => GameTypeEnum.Standard;
     }
 }
