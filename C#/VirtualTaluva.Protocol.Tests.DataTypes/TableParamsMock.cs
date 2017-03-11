@@ -16,7 +16,7 @@ namespace VirtualTaluva.Protocol.Tests.DataTypes
                 //Limit = LimitTypeEnum.NoLimit,
                 Lobby = new LobbyOptionsQuickMode
                 {
-                    StartingAmount = 1500
+                    //StartingAmount = 1500
                 },
                 MaxPlayers = 5,
                 MinPlayersToStart = 10,
@@ -41,7 +41,7 @@ namespace VirtualTaluva.Protocol.Tests.DataTypes
                 //Limit = LimitTypeEnum.FixedLimit,
                 Lobby = new LobbyOptionsRegisteredMode
                 {
-                    IsMaximumBuyInLimited = true
+                    //IsMaximumBuyInLimited = true
                 },
                 MaxPlayers = 10,
                 MinPlayersToStart = 8,
@@ -66,7 +66,7 @@ namespace VirtualTaluva.Protocol.Tests.DataTypes
                 //Limit = LimitTypeEnum.NoLimit,
                 Lobby = new LobbyOptionsRegisteredMode
                 {
-                    IsMaximumBuyInLimited = true
+                    //IsMaximumBuyInLimited = true
                 },
                 MaxPlayers = 6,
                 MinPlayersToStart = 3,

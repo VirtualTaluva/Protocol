@@ -9,18 +9,18 @@ namespace VirtualTaluva.Protocol.Tests.Comparing
         {
             Assert.AreEqual(l.GetType(), dl.GetType());
 
-            if (l.GetType() == typeof (LobbyOptionsRegisteredMode))
-            {
-                var lc = (LobbyOptionsRegisteredMode)l;
-                var dlc = (LobbyOptionsRegisteredMode)dl;
-                Assert.AreEqual(lc.IsMaximumBuyInLimited, dlc.IsMaximumBuyInLimited);
-            }
-            else if (l.GetType() == typeof(LobbyOptionsQuickMode))
-            {
-                var lt = (LobbyOptionsQuickMode)l;
-                var dlt = (LobbyOptionsQuickMode)dl;
-                Assert.AreEqual(lt.StartingAmount, dlt.StartingAmount);
-            }
+            //if (l.GetType() == typeof (LobbyOptionsRegisteredMode))
+            //{
+            //    var lc = (LobbyOptionsRegisteredMode)l;
+            //    var dlc = (LobbyOptionsRegisteredMode)dl;
+            //    Assert.AreEqual(lc.IsMaximumBuyInLimited, dlc.IsMaximumBuyInLimited);
+            //}
+            //else if (l.GetType() == typeof(LobbyOptionsQuickMode))
+            //{
+            //    var lt = (LobbyOptionsQuickMode)l;
+            //    var dlt = (LobbyOptionsQuickMode)dl;
+            //    Assert.AreEqual(lt.StartingAmount, dlt.StartingAmount);
+            //}
         }
     }
 }

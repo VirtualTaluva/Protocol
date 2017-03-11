@@ -14,41 +14,41 @@ namespace VirtualTaluva.Protocol.DataTypes.Options
         /// </summary>
         public override LobbyTypeEnum OptionType => LobbyTypeEnum.RegisteredMode;
 
-        /// <summary>
-        /// MinimumBuyInParameter
-        /// </summary>
-        [JsonIgnore]
-        public override BuyInParameterEnum MinimumBuyInParameter => BuyInParameterEnum.Multiplicator;
+        ///// <summary>
+        ///// MinimumBuyInParameter
+        ///// </summary>
+        //[JsonIgnore]
+        //public override BuyInParameterEnum MinimumBuyInParameter => BuyInParameterEnum.Multiplicator;
 
-        /// <summary>
-        /// MinimumBuyInValue
-        /// </summary>
-        [JsonIgnore]
-        public override int MinimumBuyInValue => 20;
-        /// <summary>
-        /// MaximumBuyInParameter
-        /// </summary>
-        [JsonIgnore]
-        public override BuyInParameterEnum MaximumBuyInParameter => IsMaximumBuyInLimited ? BuyInParameterEnum.Multiplicator : BuyInParameterEnum.Unlimited;
+        ///// <summary>
+        ///// MinimumBuyInValue
+        ///// </summary>
+        //[JsonIgnore]
+        //public override int MinimumBuyInValue => 20;
+        ///// <summary>
+        ///// MaximumBuyInParameter
+        ///// </summary>
+        //[JsonIgnore]
+        //public override BuyInParameterEnum MaximumBuyInParameter => IsMaximumBuyInLimited ? BuyInParameterEnum.Multiplicator : BuyInParameterEnum.Unlimited;
 
-        /// <summary>
-        /// MaximumBuyInValue
-        /// </summary>
-        [JsonIgnore]
-        public override int MaximumBuyInValue => 100;
+        ///// <summary>
+        ///// MaximumBuyInValue
+        ///// </summary>
+        //[JsonIgnore]
+        //public override int MaximumBuyInValue => 100;
 
-        /// <summary>
-        /// If Limited, the maximum buy-in will be 100*MoneyUnit. If not, a player can sit with all his money if he wants.
-        /// </summary>
-        [ExampleValue(true)]
-        public bool IsMaximumBuyInLimited { get; set; }
+        ///// <summary>
+        ///// If Limited, the maximum buy-in will be 100*MoneyUnit. If not, a player can sit with all his money if he wants.
+        ///// </summary>
+        //[ExampleValue(true)]
+        //public bool IsMaximumBuyInLimited { get; set; }
 
         /// <summary>
         /// 
         /// </summary>
         public LobbyOptionsRegisteredMode()
         {
-            IsMaximumBuyInLimited = false;
+            //IsMaximumBuyInLimited = false;
         }
     }
 }
