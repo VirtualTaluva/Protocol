@@ -52,7 +52,7 @@ namespace VirtualTaluva.Protocol.Tests.DataTypes
             //response.TotalPotAmount = 126;
             //response.PotsAmount = new List<int>() { 5, 10, 15, 20 };
             //response.BoardCards = new[] { "2s", "5h", "Jd", "Ac" };
-            //response.Seats = SeatInfoMock.AllSeats();
+            response.Seats = SeatInfoMock.AllSeats();
             response.GameHasStarted = true;
 
             return response;

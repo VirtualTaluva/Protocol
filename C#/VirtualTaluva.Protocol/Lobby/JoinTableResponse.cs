@@ -32,11 +32,11 @@ namespace VirtualTaluva.Protocol.Lobby
         //[ExampleValues(3, "2s", "Kh", "5d")]
         //public string[] BoardCards { get; set; }
 
-        ///// <summary>
-        ///// The information about every seats around the table
-        ///// </summary>
-        //[ExampleValues(1)]
-        //public List<SeatInfo> Seats { get; set; }
+        /// <summary>
+        /// The information about every seats around the table
+        /// </summary>
+        [ExampleValues(1)]
+        public List<SeatInfo> Seats { get; set; }
 
         /// <summary>
         /// Informs the client if the game is currently in the playing state, or not.
