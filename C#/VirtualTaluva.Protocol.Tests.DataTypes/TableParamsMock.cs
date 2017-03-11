@@ -25,9 +25,9 @@ namespace VirtualTaluva.Protocol.Tests.DataTypes
                 Variant = GameSubTypeEnum.Standard,
                 WaitingTimes = new ConfigurableWaitingTimes
                 {
-                    AfterBoardDealed = 1,
+                    //AfterBoardDealed = 1,
                     AfterPlayerAction = 2,
-                    AfterPotWon = 3
+                    //AfterPotWon = 3
                 }
             };
         }
@@ -50,9 +50,9 @@ namespace VirtualTaluva.Protocol.Tests.DataTypes
                 Variant = GameSubTypeEnum.Standard,
                 WaitingTimes = new ConfigurableWaitingTimes
                 {
-                    AfterBoardDealed = 1,
+                    //AfterBoardDealed = 1,
                     AfterPlayerAction = 2,
-                    AfterPotWon = 3
+                    //AfterPotWon = 3
                 }
             };
         }
@@ -75,9 +75,9 @@ namespace VirtualTaluva.Protocol.Tests.DataTypes
                 Variant = GameSubTypeEnum.Standard,
                 WaitingTimes = new ConfigurableWaitingTimes
                 {
-                    AfterBoardDealed = 1,
+                    //AfterBoardDealed = 1,
                     AfterPlayerAction = 2,
-                    AfterPotWon = 3
+                    //AfterPotWon = 3
                 }
             };
         }

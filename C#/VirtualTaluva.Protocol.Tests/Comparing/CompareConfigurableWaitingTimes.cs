@@ -8,9 +8,9 @@ namespace VirtualTaluva.Protocol.Tests.Comparing
         public static void Compare(ConfigurableWaitingTimes c, ConfigurableWaitingTimes dc)
         {
             Assert.AreEqual(c.GetType(), dc.GetType());
-            Assert.AreEqual(c.AfterBoardDealed, dc.AfterBoardDealed);
+            //Assert.AreEqual(c.AfterBoardDealed, dc.AfterBoardDealed);
             Assert.AreEqual(c.AfterPlayerAction, dc.AfterPlayerAction);
-            Assert.AreEqual(c.AfterPotWon, dc.AfterPotWon);
+            //Assert.AreEqual(c.AfterPotWon, dc.AfterPotWon);
         }
     }
 }

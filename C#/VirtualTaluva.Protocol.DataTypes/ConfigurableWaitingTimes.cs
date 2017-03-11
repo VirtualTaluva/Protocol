@@ -13,15 +13,15 @@ namespace VirtualTaluva.Protocol.DataTypes
         [ExampleValue(500)]
         public int AfterPlayerAction { get; set; }
         
-        /// <summary>
-        /// Amount of miliseconds (ms) to wait after cards are dealed
-        /// </summary>
-        [ExampleValue(500)]
-        public int AfterBoardDealed { get; set; }
-        /// <summary>
-        /// Amount of miliseconds (ms) to wait after pot is won
-        /// </summary>
-        [ExampleValue(2500)]
-        public int AfterPotWon { get; set; }
+        ///// <summary>
+        ///// Amount of miliseconds (ms) to wait after cards are dealed
+        ///// </summary>
+        //[ExampleValue(500)]
+        //public int AfterBoardDealed { get; set; }
+        ///// <summary>
+        ///// Amount of miliseconds (ms) to wait after pot is won
+        ///// </summary>
+        //[ExampleValue(2500)]
+        //public int AfterPotWon { get; set; }
     }
 }
