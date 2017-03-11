@@ -10,10 +10,10 @@ namespace VirtualTaluva.Protocol.Tests.DataTypes
         {
             return new TableParams()
             {
-                Blind = BlindTypeEnum.Blinds,
+                //Blind = BlindTypeEnum.Blinds,
                 Options = new GameTypeOptionsStandard(),
-                GameSize = 10,
-                Limit = LimitTypeEnum.NoLimit,
+                //GameSize = 10,
+                //Limit = LimitTypeEnum.NoLimit,
                 Lobby = new LobbyOptionsQuickMode
                 {
                     StartingAmount = 1500
@@ -35,10 +35,10 @@ namespace VirtualTaluva.Protocol.Tests.DataTypes
         {
             return new TableParams()
             {
-                Blind = BlindTypeEnum.Blinds,
+                //Blind = BlindTypeEnum.Blinds,
                 Options = new GameTypeOptionsStandard(),
-                GameSize = 100,
-                Limit = LimitTypeEnum.FixedLimit,
+                //GameSize = 100,
+                //Limit = LimitTypeEnum.FixedLimit,
                 Lobby = new LobbyOptionsRegisteredMode
                 {
                     IsMaximumBuyInLimited = true
@@ -60,10 +60,10 @@ namespace VirtualTaluva.Protocol.Tests.DataTypes
         {
             return new TableParams()
             {
-                Blind = BlindTypeEnum.Blinds,
+                //Blind = BlindTypeEnum.Blinds,
                 Options = new GameTypeOptionsStandard(),
-                GameSize = 1000,
-                Limit = LimitTypeEnum.NoLimit,
+                //GameSize = 1000,
+                //Limit = LimitTypeEnum.NoLimit,
                 Lobby = new LobbyOptionsRegisteredMode
                 {
                     IsMaximumBuyInLimited = true

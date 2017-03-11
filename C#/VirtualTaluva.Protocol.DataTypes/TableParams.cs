@@ -40,11 +40,11 @@ namespace VirtualTaluva.Protocol.DataTypes
         /// </summary>
         public ConfigurableWaitingTimes WaitingTimes { get; set; }
 
-        /// <summary>
-        /// The size of the table. It represents the small bet and the big blind. Big bet will be double the GameSize, small blind is half the GameSize, and Ante is 1/10 the GameSize
-        /// </summary>
-        [ExampleValue(10)]
-        public int GameSize { get; set; }
+        ///// <summary>
+        ///// The size of the table. It represents the small bet and the big blind. Big bet will be double the GameSize, small blind is half the GameSize, and Ante is 1/10 the GameSize
+        ///// </summary>
+        //[ExampleValue(10)]
+        //public int GameSize { get; set; }
 
         /// <summary>
         /// Some more parameters. Those parameters are specific to a server and are free-format. Generally, this field would be blank.
@@ -52,17 +52,17 @@ namespace VirtualTaluva.Protocol.DataTypes
         [ExampleValue("")]
         public string Arguments { get; set; }
 
-        /// <summary>
-        /// The type of blinds the table uses (none, blinds, antes)
-        /// </summary>
-        [ExampleValue(BlindTypeEnum.Blinds)]
-        public BlindTypeEnum Blind { get; set; }
+        ///// <summary>
+        ///// The type of blinds the table uses (none, blinds, antes)
+        ///// </summary>
+        //[ExampleValue(BlindTypeEnum.Blinds)]
+        //public BlindTypeEnum Blind { get; set; }
 
-        /// <summary>
-        /// The type of limit the table uses (NoLimit, PotLimit, FixedLimit)
-        /// </summary>
-        [ExampleValue(LimitTypeEnum.NoLimit)]
-        public LimitTypeEnum Limit { get; set; }
+        ///// <summary>
+        ///// The type of limit the table uses (NoLimit, PotLimit, FixedLimit)
+        ///// </summary>
+        //[ExampleValue(LimitTypeEnum.NoLimit)]
+        //public LimitTypeEnum Limit { get; set; }
 
         /// <summary>
         /// The type of table it is (QuickMode ? RegisteredMode ?) See 'VirtualTaluva.Protocol.DataTypes.Options.LobbyOptions' for more details
@@ -91,10 +91,10 @@ namespace VirtualTaluva.Protocol.DataTypes
             MinPlayersToStart = 2;
             MaxPlayers = 10;
             WaitingTimes = new ConfigurableWaitingTimes();
-            GameSize = 10;
+            //GameSize = 10;
             Lobby = new LobbyOptionsQuickMode();
-            Blind = BlindTypeEnum.Blinds;
-            Limit = LimitTypeEnum.NoLimit;
+            //Blind = BlindTypeEnum.Blinds;
+            //Limit = LimitTypeEnum.NoLimit;
             Options = new GameTypeOptionsStandard();
         }
     }

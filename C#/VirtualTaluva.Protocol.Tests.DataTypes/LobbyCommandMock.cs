@@ -49,10 +49,10 @@ namespace VirtualTaluva.Protocol.Tests.DataTypes
         {
             var response = JoinTableCommand().ResponseSuccess();
             response.Params = TableParamsMock.ParamsOne();
-            response.TotalPotAmount = 126;
-            response.PotsAmount = new List<int>() { 5, 10, 15, 20 };
-            response.BoardCards = new[] { "2s", "5h", "Jd", "Ac" };
-            response.Seats = SeatInfoMock.AllSeats();
+            //response.TotalPotAmount = 126;
+            //response.PotsAmount = new List<int>() { 5, 10, 15, 20 };
+            //response.BoardCards = new[] { "2s", "5h", "Jd", "Ac" };
+            //response.Seats = SeatInfoMock.AllSeats();
             response.GameHasStarted = true;
 
             return response;
